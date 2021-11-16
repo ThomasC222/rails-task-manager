@@ -1,0 +1,7 @@
+<h1>Parceque c'est VOTRE TAAAAASSK !</h1>
+<div><%= @task.title %> | <%= @task.details %></div>
+<div><%= link_to "tasks", tasks_path %> </div>
+<div><%= link_to "Seek & Destroy #{@task.title}",
+            task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></div>
